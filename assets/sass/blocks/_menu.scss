@@ -63,13 +63,13 @@
 
             &-has-children {
                 position: relative;
-                
+
                 &:hover {
                     &::after {
-                        
+
                     }
                 }
-                
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -132,13 +132,13 @@
 
             &-has-children {
                 position: relative;
-                
+
                 &:hover {
                     &::after {
                         border-left-color: #fff;
                     }
                 }
-                
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -185,11 +185,22 @@
 }
 
 .hamburger {
-    display: none;
+    display: inline-block;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
     transition: .2s ease-out;
+    white-space: nowrap;
+
+    &-text {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 0;
+        margin-right: 10px;
+
+        color: #fff;
+        font-size: 17px;
+    }
 
     &:focus {
         outline: 0;
@@ -200,12 +211,13 @@
     &[type="button"] {
         cursor: pointer;
         border: 0;
-        padding: 9px 5px;
+        padding: 5px;
         background-color: transparent;
     }
 
     &-box {
-        display: block;
+        display: inline-block;
+        vertical-align: middle;
         width: 30px;
         padding: 9px 0;
     }

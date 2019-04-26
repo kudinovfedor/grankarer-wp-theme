@@ -20,7 +20,7 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 @import "core/fonts";
 @import "core/wp-core";
 @import "core/help-style";
-//@import "core/flexbox";
+@import "core/flexbox";
 
 // PLUG-INs
 @import "plugins/font-awesome/font-awesome";
@@ -104,8 +104,8 @@ body {
     overflow-x: hidden;
     min-height: 100%;
 
-    @media #{$mobile} {
-        padding-top: 80px;
+    @media (max-width: 768px) {
+        padding-top: 56px;
     }
 }
 
@@ -169,4 +169,90 @@ img {
     @media #{$tablet} {
         background: none;
     }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &-info {
+            .column {
+                + .column {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    .header-call > .svg-icon,
+    .footer-phone > .svg-icon {
+        width: 52px;
+        height: 52px;
+        margin-right: 8px;
+    }
+
+    .footer {
+        &-main {
+            padding: 10px 0;
+        }
+
+        &-info {
+            padding: 15px 0;
+        }
+
+        &-logo {
+            .svg-icon {
+                width: 145px;
+                height: 27px;
+            }
+        }
+    }
+
+    .phone-number,
+    .callback-link {
+        font-size: 15px;
+    }
+
+    .phone-dropdown {
+        width: 175px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &-logo,
+        &-menu {
+            display: none;
+        }
+    }
+    .footer {
+        &-main,
+        &-info {
+            > .container {
+                display: block;
+                text-align: center;
+            }
+
+            .column {
+                margin: 0;
+                padding: 5px 0;
+            }
+        }
+
+        &-info {
+            font-size: 14px;
+            padding: 10px 0;
+        }
+
+        &-phone {
+            justify-content: center;
+        }
+    }
+
+    .header-call,
+    .footer-phone {
+        text-align: left;
+    }
+}
+
+@media (max-width: 544px) {
+
 }

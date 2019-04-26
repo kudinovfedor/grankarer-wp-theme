@@ -2,7 +2,7 @@
 function bw_enqueues()
 {
     /** Styles */
-    wp_register_style('style-css', get_template_directory_uri() . '/style.css', false, null);
+    wp_register_style('style-css', get_template_directory_uri() . '/style.css', false, time());
     wp_enqueue_style('style-css');
 
     /** Scripts */
