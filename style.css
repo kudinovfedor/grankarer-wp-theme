@@ -158,7 +158,7 @@ select {
   background-color: #fff;
   color: #000;
   font-size: 13px;
-  border-radius: 0px; }
+  border-radius: 0; }
 
 @font-face {
   font-family: 'Century Gothic';
@@ -7632,7 +7632,7 @@ h6 {
     right: auto;
     left: 20px; }
   .scroll-top.is-rounded {
-    border-radius: 0px; }
+    border-radius: 0; }
   .scroll-top.is-circle {
     border-radius: 50%; }
   .scroll-top--arrow,
@@ -7667,8 +7667,8 @@ h6 {
 form fieldset {
   background-color: white;
   padding: 25px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18);
+  box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18); }
   form fieldset label {
     font-weight: 800; }
   form fieldset input {
@@ -7679,15 +7679,15 @@ form fieldset {
     display: inline-block;
     vertical-align: middle;
     border: 0;
-    border-radius: 0px;
-    background-color: #0060b1;
-    color: #fff;
+    border-radius: 0;
+    background-color: #ffd200;
+    color: #0060b1;
     text-transform: uppercase;
     text-align: center;
     font-family: inherit;
     font-weight: 700;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18);
+    box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18);
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
@@ -7695,12 +7695,12 @@ form fieldset {
     form fieldset [type="submit"].fa {
       font-family: 'Font Awesome 5 Pro'; }
     form fieldset [type="submit"]:hover {
-      color: #fff;
-      background-color: #00447e;
+      color: #0060b1;
+      background-color: #ffb900;
       -webkit-box-shadow: none;
       box-shadow: none; }
     form fieldset [type="submit"]:active {
-      background-color: #0060b1;
+      background-color: #ffd200;
       -webkit-box-shadow: none;
       box-shadow: none; }
     form fieldset [type="submit"]:focus {
@@ -7729,8 +7729,8 @@ form fieldset {
 #commentform {
   background-color: white;
   padding: 25px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18);
+  box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18); }
   #commentform .form-group label {
     text-align: left; }
   #commentform .form-group input {
@@ -7746,220 +7746,68 @@ form fieldset {
   -moz-appearance: none;
   appearance: none; }
 
-.button-style {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 0px;
-  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Arial", "Helvetica", sans-serif;
-  height: auto;
+.button-style, .button-large, .button-medium, .button-small, .button-inverse, [type="submit"] {
   cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0060b1;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  line-height: 1 !important;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 0;
+  background-color: #ffd200;
   color: #0060b1;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
-  .button-style a {
-    color: #fff;
-    display: inline-block; }
-  .button-style span {
-    color: #fff;
-    display: inline-block; }
-  .button-style:focus {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  -webkit-box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18);
+  box-shadow: 0 14px 16px rgba(252, 177, 64, 0.18);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  .fa.button-style, .fa.button-large, .fa.button-medium, .fa.button-small, .fa.button-inverse, .fa[type="submit"] {
+    font-family: 'Font Awesome 5 Pro'; }
+  .button-style:hover, .button-large:hover, .button-medium:hover, .button-small:hover, .button-inverse:hover, :hover[type="submit"] {
+    color: #0060b1;
+    background-color: #ffb900;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .button-style:active, .button-large:active, .button-medium:active, .button-small:active, .button-inverse:active, :active[type="submit"] {
+    background-color: #ffd200;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .button-style:focus, .button-large:focus, .button-medium:focus, .button-small:focus, .button-inverse:focus, :focus[type="submit"] {
     outline: 0; }
-  .button-style.button-inverse {
-    background: #0060b1;
-    color: #fff; }
-    .button-style.button-inverse:hover, .button-style.button-inverse:active {
-      color: #0060b1;
-      background: transparent; }
-  .button-style:hover, .button-style:active {
-    background-color: #0060b1;
-    color: #fff; }
 
-.button-large,
-button.button,
-a.button {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 0px;
-  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0060b1;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0060b1;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+button {
+  cursor: pointer; }
+
+.button-large {
   padding: 16px 60px;
   font-size: 20px; }
-  .button-large a,
-  button.button a,
-  a.button a {
-    color: #fff;
-    display: inline-block; }
-  .button-large span,
-  button.button span,
-  a.button span {
-    color: #fff;
-    display: inline-block; }
-  .button-large:focus,
-  button.button:focus,
-  a.button:focus {
-    outline: 0; }
-  .button-large.button-inverse,
-  button.button.button-inverse,
-  a.button.button-inverse {
-    background: #0060b1;
-    color: #fff; }
-    .button-large.button-inverse:hover, .button-large.button-inverse:active,
-    button.button.button-inverse:hover,
-    button.button.button-inverse:active,
-    a.button.button-inverse:hover,
-    a.button.button-inverse:active {
-      color: #0060b1;
-      background: transparent; }
-  .button-large:hover, .button-large:active,
-  button.button:hover,
-  button.button:active,
-  a.button:hover,
-  a.button:active {
-    background-color: #0060b1;
-    color: #fff; }
 
 .button-medium {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 0px;
-  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0060b1;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0060b1;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 14px 25px;
   font-size: 16px; }
-  .button-medium a {
-    color: #fff;
-    display: inline-block; }
-  .button-medium span {
-    color: #fff;
-    display: inline-block; }
-  .button-medium:focus {
-    outline: 0; }
-  .button-medium.button-inverse {
-    background: #0060b1;
-    color: #fff; }
-    .button-medium.button-inverse:hover, .button-medium.button-inverse:active {
-      color: #0060b1;
-      background: transparent; }
-  .button-medium:hover, .button-medium:active {
-    background-color: #0060b1;
-    color: #fff; }
 
 .button-small {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 0px;
-  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0060b1;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0060b1;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 10px 15px;
   font-size: 14px; }
-  .button-small a {
-    color: #fff;
-    display: inline-block; }
-  .button-small span {
-    color: #fff;
-    display: inline-block; }
-  .button-small:focus {
-    outline: 0; }
-  .button-small.button-inverse {
-    background: #0060b1;
-    color: #fff; }
-    .button-small.button-inverse:hover, .button-small.button-inverse:active {
-      color: #0060b1;
-      background: transparent; }
-  .button-small:hover, .button-small:active {
-    background-color: #0060b1;
-    color: #fff; }
+
+.button-inverse {
+  color: #0060b1;
+  background-color: #ffb900; }
+  .button-inverse:hover, .button-inverse:active {
+    color: #0060b1;
+    background-color: #ffd200; }
+
+.button-block {
+  display: block;
+  width: 100%; }
 
 [type="submit"] {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 0px;
-  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0060b1;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0060b1;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  padding: 5px 10px; }
-  [type="submit"] a {
-    color: #fff;
-    display: inline-block; }
-  [type="submit"] span {
-    color: #fff;
-    display: inline-block; }
-  [type="submit"]:focus {
-    outline: 0; }
-  [type="submit"].button-inverse {
-    background: #0060b1;
-    color: #fff; }
-    [type="submit"].button-inverse:hover, [type="submit"].button-inverse:active {
-      color: #0060b1;
-      background: transparent; }
-  [type="submit"]:hover, [type="submit"]:active {
-    background-color: #0060b1;
-    color: #fff; }
+  padding: 8px 10px; }
 
 @media (max-width: 544px) {
-  .button-large,
-  button.button,
-  a.button {
+  .button-large {
     padding: 11px 45px;
     font-size: 12px; }
   .button-medium {
@@ -7970,9 +7818,7 @@ a.button {
     font-size: 8px; } }
 
 @media (min-width: 545px) and (max-width: 768px) {
-  .button-large,
-  button.button,
-  a.button {
+  .button-large {
     padding: 12px 50px;
     font-size: 13px; }
   .button-medium {
@@ -7983,9 +7829,7 @@ a.button {
     font-size: 9px; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .button-large,
-  button.button,
-  a.button {
+  .button-large {
     padding: 13px 55px;
     font-size: 14px; }
   .button-medium {
@@ -7996,9 +7840,7 @@ a.button {
     font-size: 10px; } }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
-  .button-large,
-  button.button,
-  a.button {
+  .button-large {
     padding: 14px 60px;
     font-size: 16px; }
   .button-medium {
@@ -8009,9 +7851,7 @@ a.button {
     font-size: 12px; } }
 
 @media (min-width: 1367px) {
-  .button-large,
-  button.button,
-  a.button {
+  .button-large {
     padding: 15px 65px;
     font-size: 18px; }
   .button-medium {
@@ -8771,6 +8611,8 @@ a:hover .fa {
     padding: 25px 0;
     color: #333;
     background-color: #fff; }
+    .home .footer-main {
+      border-top-color: transparent; }
   .footer-info {
     padding: 22px 0;
     color: #fff;

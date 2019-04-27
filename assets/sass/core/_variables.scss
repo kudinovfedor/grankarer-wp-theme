@@ -2,8 +2,9 @@ $debug: false !default;
 $image-url-path: "assets/img/" !default;
 $font-url-path: "assets/fonts/" !default;
 
-$borderRadius: 0px;
-$shadow: 0 0 10px rgba(#000, .2);
+$borderRadius: 0;
+$shadow: 0 14px 16px rgba(#fcb140, .18);
+
 
 // BRAND
 $themeColorOne: #0060b1; // header, menu, footer, title,
@@ -75,13 +76,13 @@ $linkFontColor: #000;
 $linkFontColorActive: lighten($linkFontColor, 20%);
 
 // BUTTONS
-$buttonFontColor: #fff;
-$buttonFontColorActive: #fff;
-$buttonBgColor: $themeColorTwo;
-$buttonBgColorActive: darken($buttonBgColor, 10%);
-$buttonBorderColor: $themeColorTwo;
-$buttonOutlinedFirstColor: $themeColorTwo;
-$buttonOutlinedSecondColor: #fff;
+$buttonFontColor: #0060b1;
+$buttonFontColorActive: #0060b1;
+$buttonBgColor: #ffd200;
+$buttonBgColorActive: #ffb900;
+$buttonBorderColor: $buttonBgColor;
+$buttonOutlinedFirstColor: $buttonBgColor;
+$buttonOutlinedSecondColor: #0060b1;
 
 // TABLE
 $tableBgColor: $themeColorTwo;
