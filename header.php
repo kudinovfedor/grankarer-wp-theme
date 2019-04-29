@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Качественный щебень оптом | Гранкарьер" />
+    <meta property="og:description" content="Качественный щебень оптом по доступным ценам">
+    <meta property="og:url" content="https://grankarer.com/" />
+    <meta property="og:site_name" content="Гранкарьер" />
+    <meta property="og:image" content="https://grankarer.com/wp-content/uploads/grankarer.jpg" />
+    <meta property="og:image:secure_url" content="https://grankarer.com/wp-content/uploads/grankarer.jpg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="628" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Качественный щебень оптом | Гранкарьер" />
+    <meta name="twitter:image" content="https://grankarer.com/wp-content/uploads/grankarer.jpg" />
+
+
     <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
           type="image/x-icon">
     <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
