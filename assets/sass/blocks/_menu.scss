@@ -273,3 +273,11 @@
         }
     }
 }
+
+.navi-main-menu-button-wrapper {
+    display: none;
+
+    &.navi-menu-active {
+        display: block;
+    }
+}
