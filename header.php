@@ -17,21 +17,29 @@
 <?php wp_body(); ?>
 
 <div class="wrapper">
-
     <header class="header">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center">
                 <div class="header-logo column mr-auto">
                     <div class="logo">
-                        <?php if (has_custom_logo()) {
-                            the_custom_logo();
-                        } else {
-                            $svg = '<svg class="svg-icon" width="260" height="48" fill="#fff"><use xlink:href="#logo"></use></svg>';
-                            $link = sprintf('<a class="logo-link" href="%s">%s</a>', esc_url(home_url('/')), $svg);
-                            $span = sprintf('<span class="logo-link">%s</span>', $svg);
+	                    <?php if ( has_custom_logo() ) {
+		                    the_custom_logo();
+	                    } else {
+		                    $lang = 'en';
+		                    $path = get_template_directory_uri() . '/assets/img/lang';
+		                    $file = $path . '/logo-header-en.svg';
 
-                            echo is_front_page() ? $span : $link;
-                        } ?>
+		                    if ( function_exists( 'pll_current_language' ) ) {
+			                    $lang = pll_current_language( 'slug' );
+			                    $file = $path . '/logo-header-' . pll_current_language( 'slug' ) . '.svg';
+		                    }
+
+		                    $img  = sprintf( '<img class="logo-img logo-img-%s" src="%s" alt="%s">', $lang, esc_url( $file ), get_bloginfo( 'name' ) );
+		                    $link = sprintf( '<a class="logo-link" href="%s">%s</a>', esc_url( home_url( '/' ) ), $img );
+		                    $span = sprintf( '<span class="logo-link">%s</span>', $img );
+
+		                    echo is_front_page() ? $span : $link;
+	                    } ?>
                     </div>
                 </div>
                 <div class="header-info column d-flex align-items-center">
@@ -92,8 +100,8 @@
                         <button class="hamburger js-hamburger" type="button" tabindex="0">
                             <span class="hamburger-text"><?php _e('Menu', 'brainworks') ?></span>
                             <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
+                                <span class="hamburger-inner"></span>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -125,14 +133,23 @@
                 </span>
             </button>
             <div class="logo">
-                <?php if (has_custom_logo()) {
-                    the_custom_logo();
-                } else {
-                    $svg = '<svg class="svg-icon" width="190" height="35" fill="#fff"><use xlink:href="#logo"></use></svg>';
-                    $link = sprintf('<a class="logo-link" href="%s">%s</a>', esc_url(home_url('/')), $svg);
-                    $span = sprintf('<span class="logo-link">%s</span>', $svg);
+	            <?php if ( has_custom_logo() ) {
+		            the_custom_logo();
+	            } else {
+		            $lang = 'en';
+		            $path = get_template_directory_uri() . '/assets/img/lang';
+		            $file = $path . '/logo-header-en.svg';
 
-                    echo is_front_page() ? $span : $link;
-                } ?>
+		            if ( function_exists( 'pll_current_language' ) ) {
+			            $lang = pll_current_language( 'slug' );
+			            $file = $path . '/logo-header-' . pll_current_language( 'slug' ) . '.svg';
+		            }
+
+		            $img  = sprintf( '<img class="logo-img logo-img-%s" src="%s" alt="%s">', $lang, esc_url( $file ), get_bloginfo( 'name' ) );
+		            $link = sprintf( '<a class="logo-link" href="%s">%s</a>', esc_url( home_url( '/' ) ), $img );
+		            $span = sprintf( '<span class="logo-link">%s</span>', $img );
+
+		            echo is_front_page() ? $span : $link;
+	            } ?>
             </div>
         </div>

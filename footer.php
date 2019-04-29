@@ -15,15 +15,24 @@
         <div class="container d-flex align-items-center">
             <div class="footer-logo column">
                 <div class="logo">
-                    <?php if (has_custom_logo()) {
-                        the_custom_logo();
-                    } else {
-                        $svg = '<svg class="svg-icon" width="291" height="55" fill="#002f62"><use xlink:href="#logo-blue"></use></svg>';
-                        $link = sprintf('<a class="logo-link" href="%s">%s</a>', esc_url(home_url('/')), $svg);
-                        $span = sprintf('<span class="logo-link">%s</span>', $svg);
+	                <?php if ( has_custom_logo() ) {
+		                the_custom_logo();
+	                } else {
+		                $lang = 'en';
+		                $path = get_template_directory_uri() . '/assets/img/lang';
+		                $file = $path . '/logo-footer-en.svg';
 
-                        echo is_front_page() ? $span : $link;
-                    } ?>
+		                if ( function_exists( 'pll_current_language' ) ) {
+			                $lang = pll_current_language( 'slug' );
+			                $file = $path . '/logo-footer-' . pll_current_language( 'slug' ) . '.svg';
+		                }
+
+		                $img  = sprintf( '<img class="logo-img logo-img-%s" src="%s" alt="%s">', $lang, esc_url( $file ), get_bloginfo( 'name' ) );
+		                $link = sprintf( '<a class="logo-link" href="%s">%s</a>', esc_url( home_url( '/' ) ), $img );
+		                $span = sprintf( '<span class="logo-link">%s</span>', $img );
+
+		                echo is_front_page() ? $span : $link;
+	                } ?>
                 </div>
             </div>
             <div class="column mx-auto">

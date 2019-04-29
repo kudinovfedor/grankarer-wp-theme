@@ -7417,6 +7417,7 @@ ol.commentlist .comment-body {
 
 h1, h2, h3, h4, h5, h6, h1.hero-title {
   color: #0060b1;
+  font-weight: bold;
   font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Arial", "Helvetica", sans-serif; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1.hero-title a {
     color: #0060b1; }
@@ -8429,7 +8430,7 @@ a:hover .fa {
     text-align: left;
     z-index: 99; }
     .nav-mobile-header img {
-      max-height: 50px; }
+      max-height: 36px; }
     .nav-mobile-header .hamburger {
       position: absolute;
       top: 12px;
@@ -8623,20 +8624,20 @@ a:hover .fa {
       text-decoration: none; }
       .footer-info a:hover {
         text-decoration: underline; }
-  .footer-menu {
+  .footer-menu ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    .footer-menu li {
-      display: inline-block;
-      vertical-align: middle; }
-    .footer-menu a {
-      display: inline-block;
-      padding: 3px 5px;
-      text-decoration: none; }
-      .footer-menu a:hover {
-        color: #002f62;
-        text-decoration: underline; }
+  .footer-menu li {
+    display: inline-block;
+    vertical-align: middle; }
+  .footer-menu a {
+    display: inline-block;
+    padding: 3px 5px;
+    text-decoration: none; }
+    .footer-menu a:hover {
+      color: #002f62;
+      text-decoration: underline; }
   .footer-phone > .svg-icon {
     margin-right: 20px; }
   .footer .phone-number {
@@ -8751,16 +8752,15 @@ img {
     margin-left: 15px; }
   .header-call > .svg-icon,
   .footer-phone > .svg-icon {
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     margin-right: 8px; }
   .footer-main {
     padding: 10px 0; }
   .footer-info {
     padding: 15px 0; }
-  .footer-logo .svg-icon {
-    width: 145px;
-    height: 27px; }
+  .footer-logo .logo-img {
+    max-height: 35px; }
   .phone-number,
   .callback-link {
     font-size: 15px; }
@@ -8774,8 +8774,9 @@ img {
     display: block;
     text-align: center; }
   .footer-main .column, .footer-info .column {
-    margin: 0;
-    padding: 5px 0; }
+    margin: 0; }
+    .footer-main .column + .column, .footer-info .column + .column {
+      margin-top: 10px; }
   .footer-info {
     font-size: 14px;
     padding: 10px 0; }

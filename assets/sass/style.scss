@@ -184,8 +184,8 @@ img {
 
     .header-call > .svg-icon,
     .footer-phone > .svg-icon {
-        width: 52px;
-        height: 52px;
+        width: 50px;
+        height: 50px;
         margin-right: 8px;
     }
 
@@ -199,9 +199,9 @@ img {
         }
 
         &-logo {
-            .svg-icon {
-                width: 145px;
-                height: 27px;
+
+            .logo-img {
+                max-height: 35px;
             }
         }
     }
@@ -233,7 +233,10 @@ img {
 
             .column {
                 margin: 0;
-                padding: 5px 0;
+
+                + .column {
+                    margin-top: 10px;
+                }
             }
         }
 

@@ -62,7 +62,7 @@ function jp_remove_wp_ver_css_js($src)
     return $src;
 }
 
-//add_filter('style_loader_src', 'jp_remove_wp_ver_css_js');
+add_filter('style_loader_src', 'jp_remove_wp_ver_css_js');
 add_filter('script_loader_src', 'jp_remove_wp_ver_css_js');
 
 /**

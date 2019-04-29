@@ -28,7 +28,7 @@
         stickFooter('.js-footer', '.js-container');
         // hamburgerMenu('.js-menu', '.js-hamburger', '.js-menu-close');
         anotherHamburgerMenu('.js-menu', '.js-hamburger', '.js-menu-close');
-        buyOneClick('.one-click', '[data-field-id="field7"]', 'h1.page-name');
+        buyOneClick('.one-click', '[data-field-id="field11"]', 'h1.page-name');
         // On Copy
         d.on('copy', addLink);
 
@@ -53,7 +53,7 @@
      */
     const stickFooter = (footer, container) => {
         const el = $(footer);
-        const height = (el.outerHeight() + 20) + 'px';
+        const height = (el.outerHeight()) + 'px';
 
         $(container).css('paddingBottom', height);
     };
