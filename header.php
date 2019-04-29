@@ -97,7 +97,7 @@
                         </div>
                     <?php } ?>
                     <div class="column header-menu">
-                        <button class="hamburger js-hamburger" type="button" tabindex="0">
+                        <button class="hamburger js-hamburger navi-main-menu-activator" type="button" tabindex="0">
                             <span class="hamburger-text"><?php _e('Menu', 'brainworks') ?></span>
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
@@ -127,7 +127,7 @@
     <div class="container js-container">
 
         <div class="nav-mobile-header">
-            <button class="hamburger js-hamburger" type="button" tabindex="0">
+            <button class="hamburger js-hamburger navi-main-menu-activator" type="button" tabindex="0">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
